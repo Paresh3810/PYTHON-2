@@ -9,3 +9,25 @@ pd.plotting.scatter_matrix(x)
 plt.show()
 
 @
+IQR:
+(1)IQR=Q3-Q1
+:-->
+Q1=x["mpg"].quantile(0.25)
+Q3=x["mpg"].quantile(0.75)
+
+iqr=Q3-Q1
+
+LOW=Q1-1.5*iqr
+high=Q3+1.5*iqr
+
+out=x[(x["mpg"]<LOW)| (x["mpg"]>high)]
+print(out)
+
+@ 9 mark , ipl-matches.csv file
+1. display into dataset
+2. display discribe with only number
+3.list all matches gone the superover
+4.how many matches won by csk at kolkata
+5.in how many matches MS DHONI is player of the matches vs mumbai indian
+6.display all matches cup won toss elect bat first won matches
+7. display all matches won by GT
